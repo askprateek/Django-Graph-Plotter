@@ -28,9 +28,7 @@ jupyter-client==4.3.0
 jupyter-console==4.1.1
 jupyter-core==4.1.0
 llvmlite==0.11.0
-numexpr==2.6.0
 numpy==1.11.0
-odo==0.5.0
 psycopg2==2.6.1
 pyasn1==0.1.9
 pycosat==0.6.1
