@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Scatter Plots</title>
+        <link href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.0.min.css" rel="stylesheet" type="text/css">
+        <link href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.0.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+
+
+    </head>
+    <body>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo center">Graph Plotting</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="sass.html">Sass</a></li>
+              <li><a href="badges.html">Components</a></li>
+              <li><a href="collapsible.html">JavaScript</a></li>
+            </ul>
+          </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+
+          <div class="col s12 m6">
+            <form method="post" action >
+
+            <div class="row">
+              <div class="col s12">
+                <label for="equation">Polynomial Equation - f(x)</label>
+                <input id = "equation" name = "equation">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s12">
+                <label for="domain">Domain of Equation</label>
+                <input id = "domain" name = "domain">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s12">
+                <button class="btn">Draw Graph</button>
+              </div>
+            </div>
+
+          </form>
+          </div>
+
+
+          <div class="col s12 m6 center-align" style="margin-top:20px;">
+            {{ div | safe }}
+          </div>
+
+        </div>
+      </div>
+        <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.0.min.js"></script>
+        <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.0.min.js"></script>
+        {{ script | safe }}
+    </body>
+</html>
