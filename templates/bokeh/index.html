@@ -1,12 +1,13 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Bokeh Scatter Plots</title>
+        <title>DAP Graph Plotter</title>
         <link href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.0.min.css" rel="stylesheet" type="text/css">
         <link href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.0.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-        <link rel="stylesheet" href = "http://www.askprateek.com/style.css">
+        <link rel="stylesheet" href="{%static 'style.css'%}">
     </head>
     <body>
       <nav>
