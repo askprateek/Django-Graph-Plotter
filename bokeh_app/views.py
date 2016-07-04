@@ -10,15 +10,14 @@ def index(request):
         return render_to_response('bokeh/index.html')
 
     elif request.method == "POST" :
-        domain  = int(request.POST['domain'])
+        domain  = request.POST['domain'].split()
         eqn     = request.POST['equation']
-        x = range(domain)
-        y = [ eval(eqn) for a in x ]
-        #output_file("bokeh_plot.html")
+        domain = range( int(domain[0]), int(domain[1]) )
+        y = [ eval(eqn) for x in domain ]
         title = 'y = ' + eqn
-        plot = figure(title= title , x_axis_label= 'x', y_axis_label= 'y', plot_width =400, plot_height =400)
-        plot.line(x, y, legend= 'f(x)', line_width = 2)
 
+        plot = figure(title= title , x_axis_label= 'X-Axis', y_axis_label= 'Y- Axis', plot_width =400, plot_height =400)
+        plot.line(domain, y, legend= 'f(x)', line_width = 2)
         script, div = components(plot)
 
         return render_to_response( 'bokeh/index.html', {'script' : script , 'div' : div} )
