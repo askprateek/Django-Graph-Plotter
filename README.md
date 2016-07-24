@@ -14,6 +14,6 @@ pip install -r requirements.txt
 * In Domain , enter the range of values of x seperated by space like **10 30**.
 
 
-**Digital Artist Prateek | [Visit Website] (www.askprateek.com)** 
+**Digital Artist Prateek | [Visit Website] (http://www.askprateek.com)** 
 
 
